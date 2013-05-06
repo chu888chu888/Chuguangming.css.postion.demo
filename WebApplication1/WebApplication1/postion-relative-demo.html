@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css">
+        body {
+            margin:0px;
+        }
+        #parent {
+            width: 600px;
+            height: 600px;
+            background-color: red;
+        }
+        /*sub1这个层会以parent这个层为相对的位置进行偏移*/
+        #sub1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+            padding: 5px;
+            top: 5px;
+            left: 5px;
+        }
+        /*sub2这个层会在它所有的位置进行偏移*/
+        #sub2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            position:relative;
+            top:50px;
+            left:50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="sub1">sub1</div>
+        <div id="sub2">sub2</div>
+    </div>
+</body>
+</html>
